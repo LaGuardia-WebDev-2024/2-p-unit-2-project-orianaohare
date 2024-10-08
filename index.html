@@ -15,10 +15,58 @@ Select ONE Additional Feature to Add
     
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Unit 2 Project</title>
-    </head>
+ <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+  body {background-color: #1f7f9c;}
+  body {
+  color: white;
+}
+  h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+</style>
+<body>
+
+<h2 class="w3-center"> MAIN STREET </h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://api.deepai.org/job-view-file/57f0e657-e6cb-471f-b2c1-47d29f96703e/outputs/output.jpg?art-image=true" style="width:100%">
+  <img class="mySlides" src="https://api.deepai.org/job-view-file/c2b040c9-3b48-42ea-90ff-2e40ce517f82/outputs/output.jpg?art-image=true" style="width:100%">
+  <img class="mySlides" src="https://api.deepai.org/job-view-file/8165b80e-1392-4929-9e10-6ae9d8ee7f77/outputs/output.jpg?art-image=true" style="width:100%">
+  <img class="mySlides" src="https://api.deepai.org/job-view-file/b164fcec-15d6-48ee-b971-43322c957728/outputs/output.jpg?art-image=true" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  <h2>
+    Our beaches
+  </h2>
+<img src="https://api.deepai.org/job-view-file/0de9cb7c-249e-41b9-946b-12bc6be0dd72/outputs/output.jpg?art-image=true"
+
     <body>
 
         
