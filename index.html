@@ -15,12 +15,81 @@ Select ONE Additional Feature to Add
     
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Unit 2 Project</title>
-    </head>
+ <title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+  body {background-color: #1f7f9c;}
+  body {
+  color: white;
+}
+  h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+h1 {
+  font-size: 100px;
+}
+  h2 {font-size: 50;}
+div.a {
+  text-align: center;
+}
+  /* Thick red border */
+hr.new4 {
+  border: 10px solid pink;
+}
+</style>
+<body>
+  
+ <div class="a">
+   <h1>
+    PAULINA
+  </h1>
+<h2> travel guide
+  </h2>
+  
+<hr class="new4">
+   Paulina is a small island in the mediterranean sea off the coast of italy. We hold pride in our award winning food, beaches, monuments and much more. We are home to many celebrities and people from all places. People usually send their days going to the beach, eating out at our best resturants and going to our best nightclubs.  
+   
+   <br>
+   <br>    
+<h3 class="w3-center"> OUR BEACHES </h3>
+  
+<div class="w3-content w3-display-container">
+ 
+  <img class="mySlides" src="https://api.deepai.org/job-view-file/a7a80aa3-3d3a-449b-8615-12b8a90c42dd/outputs/output.jpg?art-image=true" style="width:100%">
+  <img class="mySlides" src="https://api.deepai.org/job-view-file/04ba3a89-56e5-4951-8f66-ed52be0cd5a7/outputs/output.jpg?art-image=true" style="width:100%">
+  <img class="mySlides" src="https://api.deepai.org/job-view-file/c6391922-8f47-4b22-a904-bac04a8269c5/outputs/output.jpg?art-image=true" style="width:100%">
+  <img class="mySlides" src="https://api.deepai.org/job-view-file/4b4918d7-5b5e-4f3e-8271-b6300a99c239/outputs/output.jpg?art-image=true" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+ 
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
     <body>
 
         
     </body>
 </html>
+
